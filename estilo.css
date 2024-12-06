@@ -1,0 +1,677 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #171717;
+    color: #fff;
+    font-family: 'Krub';
+}
+/* header */
+header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10px;
+    font-family: 'Oswald';
+}
+header h1{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+header h1 .cuadro{
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    margin-right: 10px;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+}
+header nav ul li{
+    padding: 10px 0;
+    border-bottom: 3px solid transparent;
+    margin: 0 30px;
+}
+header nav ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    color: #fff;
+    text-transform: uppercase;
+}
+header nav ul li:hover{
+    border-bottom: 3px solid #fff;
+}
+header button{
+    border: none;
+    padding: 3px 10px;
+    text-transform: uppercase;
+    cursor: pointer; 
+}
+/* sección inicio */
+.contenido{
+    max-width: 1100px;
+    margin-top: 0px;
+    margin: auto;
+}
+#inicio .contenido .fila{
+    display: flex;
+    justify-content: space-between;
+}
+#inicio .contenido .fila .col{
+    width: 22%;
+    position: relative;
+}
+#inicio .contenido .fila .ui{
+    font-family: 'Krub';
+    font-size: 132px;
+    display: flex;
+    align-items: baseline;
+}
+#inicio .contenido .fila .ui .circulo{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #a35ff9;
+    border-radius: 12px;
+}
+#inicio .contenido .fila .col .info{
+    padding-left: 120px;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+#inicio .contenido .fila .col .info h2{
+    width: fit-content;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;    
+}
+#inicio .contenido .fila .col .txt{
+    font-family: 'Krub';
+    font-weight: normal;
+    font-size: 43px;
+}
+.vertical{
+    top: 50%;
+    position: relative;
+    left: -10px;
+    transform: scale(-1) translate(-50%, 50%);
+    writing-mode: vertical-lr;
+    letter-spacing: 5px;
+}
+.circulo-principal{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background-color: #a35ff9;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1000;
+}
+
+.karolbb {
+    width: 300px;
+    height: 300px;
+    border-radius: 400px;
+}
+#inicio .contenido .fila .col img{
+    display: flex;
+}
+#inicio .contenido .fila .derecha{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    font-family: 'Krub';
+}
+#inicio .contenido .fila .derecha h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+    
+}
+#inicio .contenido .fila .derecha p{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.btn-primary{
+    display: inline-block;
+    width: fit-content;
+    background-color: #a35ff9;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    padding: 7px 15px;
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    transition: .3s;
+}
+.btn-primary:hover{
+    background-color: #000;
+}
+.btn-secondary{
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    padding: 7px 15px;
+    text-transform: uppercase;
+    font-family: 'Oswald';
+}
+
+
+/* sección sobre mi */
+#sobremi{
+    padding: 50px 10px;
+    height: 90vh;
+}
+#sobremi .contenido .fila{
+    display: flex;
+    align-items: center;
+}
+#sobremi .contenido .fila .col{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.titulo-seccion{
+    font-size: 61px;
+    margin-bottom: 20px;
+}
+.resaltado{
+    color: #a35ff9;
+    font-weight: normal;
+}
+#sobremi .contenido .fila .col > p{
+    font-size: 14px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+#sobremi .contenido .fila .col .skills{
+    margin: 20px 0;
+}
+#sobremi .contenido .fila .col .skills p{
+    margin-right: 40px;
+}
+#sobremi .contenido .fila .col .punto {
+    width: 10px;
+    height: 10px;
+    background-color: #a35ff9;
+    display: inline-block;
+    margin-right: 15px;
+}
+#sobremi .contenido .fila .col .barra-skill{
+    width: 80%;
+    height: 15px;
+    border: 1px solid #555555;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-left: 30px;
+    position: relative;
+    margin-bottom: 20px;
+}
+#sobremi .contenido .fila .col .barra-skill span{
+    display: inline-block;
+    font-size: 10px;
+    position: relative;
+    text-align: center;
+    bottom: 5px;
+    width: 100%;
+}
+.progreso{
+    background-color: #a35ff9;
+    width: 0;
+}
+.dw{
+    width: 0%;
+    animation: dw 1.5s forwards;
+}
+@keyframes dw{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 95%;
+    }
+}
+.dg{
+    width: 0%;
+    animation: dg 1.5s forwards;
+}
+@keyframes dg{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+.bd{
+    width: 0%;
+    animation: bd 1.5s forwards;
+}
+@keyframes bd{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+.md{
+    width: 0%;
+    animation: md 1.5s forwards;
+}
+@keyframes md{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+#sobremi .contenido .fila .col img{
+    display: block;
+    max-width: 500px;
+    margin: auto;
+}
+
+/* sección proyectos */
+#proyectos{
+    padding: 50px 10px;
+}
+#proyectos .contenido .fila{
+    display: flex;
+    justify-content: space-between;
+}
+#proyectos .contenido .fila .col{
+    border: 2px solid #fff;
+    padding: 60px 20px 20px 20px;
+    position: relative;
+    text-align: center;
+    width: 250px;
+    margin-bottom: 20px;
+    transition: .5s;
+}
+#proyectos .contenido .fila .col:hover{
+    box-shadow: 0px 0px 20px #a35ff9;
+    transform: scale(1.05);
+}
+#proyectos .contenido .fila .col .numero-proyecto{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    color: #000;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    transition: .4s;
+}
+#proyectos .contenido .fila .col:hover .numero-proyecto{
+    background-color: #a35ff9;
+    color: #fff;
+}
+#proyectos .contenido .fila .col img{
+    max-width: 100%;
+    margin: auto;
+    display: block;
+    cursor: pointer;
+}
+
+/* Nuevo estilo para la imagen en tamaño completo */
+.ful-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none; /* Oculta por defecto */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.ful-img img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.close-btn:hover {
+    color: #a35ff9;
+}
+
+/* Animación para los botones */
+header button {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Yo agregue jijiji */
+.sobremi{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.sobremi .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+}
+.sobremi h2{
+    font-size: 48px;
+    text-align: center;
+    padding: 20px 0;
+
+}
+.sobremi .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.sobremi .contenido-seccion p span{
+    color: #a35ff9;
+    font-weight: bold;
+}
+.sobremi .fila{
+    display: flex;
+}
+.sobremi .fila .col
+{
+    width: 50%;
+}
+.sobremi .fila .col h3{
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+.sobremi .fila .col ul{
+    list-style: none;
+}
+.sobremi .fila .col ul li{
+    margin: 12px 0;
+}
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    color: #a35ff9;
+    width: 130px;
+}
+.sobremi .fila .col ul li span{
+    background-color: #a35ff9;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.sobremi .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sobremi .fila .col .contenedor-intereses .interes{
+    width: 100px;
+    height: 100px;
+    background-color: #252A2E;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}.sobremi .fila .col .contenedor-intereses .interes:hover{
+    background-color: #1CB698;
+}
+.sobremi .fila .col .contenedor-intereses .interes i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.sobremi button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.sobremi button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+.sobremi button:hover .overlay{
+    width: 100%;
+}
+/* SECCION CONTACTO */
+.contacto{
+    background-image: url(img/contact_bg.png);
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 0;
+}
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto h2{
+    font-size: 48px;
+    text-align: center;
+    padding: 20px 0;
+}
+.contacto .fila{
+    display: flex;
+}
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+}
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #a35ff9;
+    z-index: -1;
+    transition: 1s;
+}
+.contacto button:hover .overlay{
+    width: 100%;
+}
+.contacto .col img{
+    width: 100%;
+}
+.contacto .col .info{
+    position: absolute;
+    top: 40%;
+    background-color: #252A2E;
+    padding: 20px;
+    max-swidth: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contacto .col .info ul{
+    list-style: none;
+}
+.contacto .col .info ul li{
+    margin-bottom: 20px;
+}
+.contacto .col .info ul li i{
+    color: #a35ff9;
+    display: inline-block;
+    margin-right: 20px;
+}
+footer{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes{
+    margin-bottom: 20px;
+}
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+footer .arriba{
+    display: block;
+    width: 500px;
+    height: 50px;
+    background-color: #1CB698;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+/* SECCION RESPONSIVE */
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width:700px){
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .col{
+        width: 100%;
+    }
+    .skills .fila .col .barra-skill{
+        width: 100%;
+    }
+
+    .curriculum .fila{
+        display: block;
+    }
+    .curriculum .fila .col{
+        width: 90%;
+    }
+    .curriculum .fila .derecha{
+        margin-left: 20px;
+    }
+
+    .portfolio .galeria{
+        display: block;
+        width: 100%;
+    }
+    .portfolio .galeria .proyecto{
+        max-width: 100%;
+    }
+    .portfolio .galeria .proyecto img{
+        width: 100%;
+    }
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
+}
